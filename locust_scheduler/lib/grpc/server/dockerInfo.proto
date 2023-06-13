@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+message DockerInfoRequest {
+    string value = 1;
+}
+
+message DockerInfoResponse {
+    string value = 1;
+}
+
+service DockerInfo {
+    rpc DockerInfo(DockerInfoRequest) returns (DockerInfoResponse) {}
+    rpc ExecuteUpdate(DockerInfoRequest) returns (DockerInfoResponse) {}
+}
