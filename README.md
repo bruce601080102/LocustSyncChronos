@@ -1,7 +1,5 @@
 ## LocustSyncChronos
 ---
-<a href="/atiksoftware/pubg_mobile_memory_hacking_examples/blob/LocustSyncChronos">
-<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/eagle705/brucesplit" alt="Hits" data-canonical-src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/eagle705/LocustSyncChronos" style="max-width:100%;"></a> 
 
 ![DEMO](./images/demo.png)
 ## 專案介紹
