@@ -32,7 +32,7 @@ The purpose of this project is to improve the limitations of Locust in distribut
     ```sh
     pip install -r requirements.txt
     ```
-    [Detailed deployment instructions](Github專案部署)
+    [Detailed deployment instructions](https://github.com/bruce601080102/LocustSyncChronos/wiki/Github%E5%B0%88%E6%A1%88%E9%83%A8%E7%BD%B2)
 
 
 ## 筆記
