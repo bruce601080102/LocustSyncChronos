@@ -1,5 +1,6 @@
 ## LocustSyncChronos
 ---
+[中文版](./README.md) [English](./README-en.md)
 
 ![DEMO](./images/demo.png)
 ## 專案介紹
