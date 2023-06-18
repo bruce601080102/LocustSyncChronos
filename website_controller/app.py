@@ -78,6 +78,8 @@ if selected == "Locust":
             with open(pwd.replace("website_controller","locust_scheduler" )+'/conf/env.conf', 'w') as file:
                 file.write(conf)
     with tab2:
+        with open("../locust_scheduler/log/output.txt", "w") as file:
+            file.truncate(0)
         upload_and_select.uploader()
         upload_and_select.start_locust()
 

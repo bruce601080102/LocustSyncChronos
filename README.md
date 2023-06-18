@@ -12,25 +12,16 @@
 - [x] 自動化壓測
 - [x] 計時停止壓測
 - [x] 自動化生成csv
-
-## 當前版本(v2.0.0)
-- 修正rps抓不對的問題
-- 無須執行shell sript，只需執行python main.py即可
-
-## 文件
-* [Drawio -壓測系統流程圖](https://app.diagrams.net/#G16ziCpYF0JZqqCHCFr2mBbwDy79TjjtS5)
+- [x] 管理介面
 
 ## 用法
 1. **下載專案**
     ```sh
-    git clone https://gitlab.hitrustai.com/bruce60108010204/stress-test.git
+    git clone https://github.com/bruce601080102/LocustSyncChronos.git
     ```
 
 2. **安裝包**
     ```sh
-    apt-get update
-    apt-get upgrade -y
-    apt-get install -y python3-opencv
     pip install -r requirements.txt
     ```
 

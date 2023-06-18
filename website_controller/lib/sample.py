@@ -129,20 +129,21 @@ class UploadAndSelect:
                 self.target_file = uploaded_files.name
                 with open(pwd + "/scripts/" + uploaded_files.name, "w", encoding="utf-8") as file:
                     file.write(py)
+                
             except Exception as e:
                 print(e)
                 st.error("請上傳.py")
 
     def start_locust(self):
+        time.sleep(0.2)
         _, _, start_col3, _, _ = st.columns(5)
-        
         with start_col3:
             start = st.button('執行壓測')
         if start:
             import os
             if self.target_file is not None:
-                # subprocess.Popen(args=["../bin/run_locust.sh" ,self.target_file])
-                subprocess.Popen(args=["../bin/run_locust.sh" ,self.target_file], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                subprocess.Popen(args=["../bin/run_locust.sh" ,self.target_file])
+                # subprocess.Popen(args=["../bin/run_locust.sh" ,self.target_file], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
                 with start_col3:
                     with st.spinner('Preparing the WebDriver. Please wait a moment.'):
                         while True:
@@ -161,7 +162,7 @@ class UploadAndSelect:
                                 if "end" in content:
                                     break
                 st.success('Done!')
-                df = pd.read_csv("../locust_scheduler/output/fraud-detect-predict.csv")
+                df = pd.read_csv("../locust_scheduler/" + self.savepath)
                 self.download_csv()
                 st.dataframe(df.head())
                 with open("../locust_scheduler/log/output.txt", "w") as file:

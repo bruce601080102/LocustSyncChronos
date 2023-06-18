@@ -82,6 +82,7 @@ class LocustSys(LocustSysUtils):
         except Exception:
             df = pd.DataFrame()
         df = pd.concat([pd.DataFrame([dict_result]), df]).reset_index(drop=True)
+        print("savepath:",self.savepath)
         df.to_csv(self.savepath, encoding='utf_8_sig', index=False)
 
     def process(self):
