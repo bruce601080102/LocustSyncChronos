@@ -3,7 +3,7 @@
 <a href="/atiksoftware/pubg_mobile_memory_hacking_examples/blob/LocustSyncChronos">
 <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/eagle705/brucesplit" alt="Hits" data-canonical-src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://github.com/eagle705/LocustSyncChronos" style="max-width:100%;"></a> 
 
-![DEMO](../images/demo.png)
+![DEMO](./images/demo.png)
 ## 專案介紹
 這個項目旨在改善Locust在分散式連線方面的限制，並提供一個使用者友好的管理介面。它還具備計時器功能，以便在進行壓力測試時能夠控制和監視執行時間。此外，該介面還支持將腳本同步到不同的worker上，以便在分散式部署中保持腳本的一致性。
 
